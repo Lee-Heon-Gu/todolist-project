@@ -56,7 +56,8 @@ function delAllList() {
     }
 };
 
-document.querySelector(".text-basic").addEventListener("keyup", function(event) {
+// 한글 입력 후 enter시 두번 중복 실행 문제 해결.
+document.querySelector(".text-basic").addEventListener("keypress", function(event) {
     if (event.code == 'Enter')
     {
         alert("Enter pressed!");
